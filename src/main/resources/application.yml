@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123
+    url : jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+
+server:
+  context-path: /sell
+
+wechat:
+   mpAppId: wx40a4f62582d578e8
+   mpAppSecret: 63319836a7ff3c0119ddf51abe091fd6
+   mchId:
+   mchKey:
+   KeyPath:
+   notifyUrl:
+    templateId:
+       orderStatus:
+logging:
+  level:
+      com.example.sell.dataobject.mapper: debug
+
+
+#projectUrl:
+#  wechatMpAuthorize: http://justinallen110.vicp.io
+#  wechatOpenAuthorize: http://justinallen110.vicp.io
+#  sell: http://justinallen110.vicp.io
